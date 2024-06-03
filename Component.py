@@ -60,7 +60,7 @@ class RectangleStyleLeaf(Leaf):
         else:
             print(f"{prefix}{self.icon} {self.name} " + '─' * padding + subfix)
 
-# 容器节点类
+# 中间节点类
 class Container(Component):
     def __init__(self, name, level, icon):
         self.name = name
@@ -75,7 +75,7 @@ class Container(Component):
     def draw(self, is_first, is_last, is_last_levels, line_length):
         pass
 
-# 树形风格容器节点类
+# 树形风格中间节点类
 class TreeStyleContainer(Container):
     def draw(self, is_first, is_last, is_last_levels, line_length):
         # 构建前缀
@@ -95,7 +95,7 @@ class TreeStyleContainer(Container):
         # 恢复 is_last_levels 列表
         is_last_levels.pop()
 
-# 矩形风格容器节点类
+# 矩形风格中间节点类
 class RectangleStyleContainer(Container):
     def draw(self, is_first, is_last, is_last_levels, line_length):
         # 构建前缀
