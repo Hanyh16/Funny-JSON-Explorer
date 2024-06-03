@@ -1,6 +1,11 @@
 # Funny-JSON-Explorer
 Funny JSON Explorer(FJE)，是一个JSON文件可视化的命令行界面小工具。
 
+命令行使用方式：
+```
+python main.py -f <json file> -s <style> -i <icon family>
+```
+
 ## 类图
 ![UML](UML.png)
 
