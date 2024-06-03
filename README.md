@@ -24,14 +24,14 @@ Funny JSON Explorer(FJE)，是一个JSON文件可视化的命令行界面小工�
 
 ## 运行截图
 
-tree+star:
+tree+star:<br />
 ![tree+star](output_images/tree+star.png)
-
-tree+king:
+<br />
+tree+king:<br />
 ![tree+king](output_images/tree+king.png)
-
-rectangle+star:
+<br />
+rectangle+star:<br />
 ![rectangle+star](output_images/rectangle+star.png)
-
-rectangle+king:
+<br />
+rectangle+king:<br />
 ![rectangle+king](output_images/rectangle+king.png)
