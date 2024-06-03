@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-# 组件类，定义了添加和移除子节点的方法
+# 组件类，定义了添加子节点的方法
 class Component(ABC):
     def add(self, child):
         pass
