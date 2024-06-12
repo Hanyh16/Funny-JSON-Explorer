@@ -10,13 +10,13 @@ python main.py -f <json file> -s <style> -i <icon family>
 
 ## 设计模式
 
-1. **工厂方法**（Factory）：在各风格工厂中的'create_container'方法和'create_leaf'方法是工厂模式的方法。
+1. **工厂方法**（Factory）：在各风格工厂中的`create_container`方法和`create_leaf`方法是工厂模式的方法。
 
-2. **抽象工厂**（Abstract Factory）：'AbstractFactory'是抽象工厂接口，'TreeStyleFactory'和'RectangleStyleFactory'是具体的抽象工厂，它们一起实现了抽象工厂。
+2. **抽象工厂**（Abstract Factory）：`AbstractFactory`是抽象工厂接口，`TreeStyleFactory`和`RectangleStyleFactory`是具体的抽象工厂，它们一起实现了抽象工厂。
 
-3. **建造者模式**（Builder pattern）：'AbstractFactory'是'Builder'，'Director'指挥'Builder'进行生产。'Director'类的'create'方法用于创建中间节点和叶子节点，'_load'方法和'show'方法分别用于加载'json'文件和将其可视化，'create_container'和'create_leaf'是'Builder'的部分方法。
+3. **建造者模式**（Builder pattern）：`AbstractFactory`是Builder，Director指挥Builder进行生产。Director类的`create`方法用于创建中间节点和叶子节点，`_load`方法和`show`方法分别用于加载json文件和将其可视化，`create_container`和`create_leaf`是Builder的部分方法。
 
-4. **组合模式**（Composite pattern)：'Component'抽象类为中间节点'Container'和叶子节点'Leaf'定义了统一的接口。'Container'类表示具有子节点的中间节点，'Leaf'类表示叶子节点，他们可以通过相同接口进行操作，被一致地使用实现了组合模式。
+4. **组合模式**（Composite pattern)：`Component`抽象类为中间节点`Container`和叶子节点`Leaf`定义了统一的接口。`Container`类表示具有子节点的中间节点，`Leaf`类表示叶子节点，他们可以通过相同接口进行操作，被一致地使用实现了组合模式。
 
 ## 可扩展性
 
